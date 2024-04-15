@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .image {
+    height: 100px;
+    cursor: pointer;
+  }
+  @media (max-width: 768px){
+      .image {
+          height: 60px;
+      }
+  }
+  @media (max-width: 552px){
+      .image {
+          height: 40px;
+      }
+  }

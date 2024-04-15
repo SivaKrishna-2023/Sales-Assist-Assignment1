@@ -1,0 +1,10 @@
+.productItemPlaceHolder {
+    border: 1px solid grey;
+    height: 260px;
+    width: 200px;
+    border-radius: 6px;
+    margin: 15px;
+    flex-grow: 1;
+    max-width: 240px;
+    background-color: grey;
+  }

@@ -1,0 +1,29 @@
+.categoryContainer {
+    /* border: 1px solid red; */
+    margin: 15px;
+    align-self: center;
+    overflow-x: scroll;
+    max-width: 100%;
+    display: flex;
+  }
+  .categoryContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .categoryItem {
+    all: unset;
+    margin: 0 10px;
+    color: rgb(108, 103, 103);
+    cursor: pointer;
+  }
+  
+  .categoryItemPlaceholder {
+    width: 100px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: rgb(114, 108, 108);
+  }
+  
+  .categoryItemSelected {
+    color: rgb(217, 214, 214);
+  }
