@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-
 // CSS Module
 import styles from "./index.module.css";
-
 // components
 import NavbarComponent from "../../components/NavbarComponent";
 import ProductSection from "../../components/ProductSection";
 import HeaderComponent from "../../components/HeaderComponent";
-
 // Context
 import ReactContext from "../../context/ReactContext";
 
@@ -29,7 +26,7 @@ const MyApp = () => {
   const [data, setData] = useState([]);
   const [categoryText, setCategoryText] = useState("");
   const [apiStatus, setApiStatus] = useState(apiStatusConstants.initial);
-  const [errMsg, setErrMsg] = useState("");
+  
 
   const getData = async () => {
     try {
@@ -39,7 +36,6 @@ const MyApp = () => {
       setApiStatus(apiStatusConstants.success);
     } catch (error) {
       setApiStatus(apiStatusConstants.failure);
-      setErrMsg(error?.message || "Error");
     }
   };
 
